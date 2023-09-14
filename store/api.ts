@@ -8,11 +8,12 @@ import axios from "axios";
 // module.exports = nextConfig
 
 export const LoadData = async () => {
-  const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=c815328fa2cd50077d9658b6e39967fb&sort_by=popularity.desc&page=1`;
-  // res returns 20 movies
+  // const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=c815328fa2cd50077d9658b6e39967fb&sort_by=popularity.desc&page=1`;
+  const apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=c815328fa2cd50077d9658b6e39967fb`;
   let res;
   try {
     res = await axios.get(apiUrl);
+    console.log(res);
 
     return {
       movies: res?.data.results.slice(0, 10),
