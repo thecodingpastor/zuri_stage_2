@@ -1,0 +1,61 @@
+// @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,700;1,200&family=Quicksand:wght@300&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  word-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+svg {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  transition: all 500ms;
+}
+
+::-webkit-scrollbar {
+  width: 2rem;
+
+  &-track {
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+
+  &-thumb {
+    border-radius: 1rem;
+    border: 0.5rem solid white;
+    background-color: #e8e8e8;
+    // background-color: #be123c;
+  }
+}

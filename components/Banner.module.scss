@@ -1,0 +1,49 @@
+.Container {
+  max-height: 60rem;
+  overflow: hidden;
+  position: relative;
+
+  div {
+    position: absolute;
+    border-radius: 1rem;
+    width: 60%;
+    margin-left: 1rem;
+    padding: 1rem;
+    bottom: 10%;
+    background-color: rgba(black, 0.4);
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    overflow: hidden;
+
+    p {
+      line-height: 1.2;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    a {
+      background-color: #be123c;
+      color: whitesmoke;
+      border-radius: 0.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content;
+      gap: 0.5rem;
+      padding: 0.5rem 0.8rem;
+      margin-top: 1rem;
+      font-family: "DM Sans", "sans-serif";
+    }
+
+    svg {
+      font-size: 2rem;
+    }
+  }
+}
+
+.Placeholder {
+  max-height: 60rem;
+  width: 100%;
+  background-color: red;
+}

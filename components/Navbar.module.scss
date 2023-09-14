@@ -1,0 +1,49 @@
+.Container {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: rgba(black, 0.3);
+
+  .Logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+    span {
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  .Search {
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    position: relative;
+    svg {
+      position: absolute;
+      right: 0.7rem;
+      font-size: 1.8rem;
+      bottom: 0.8rem;
+    }
+    input {
+      width: 25rem;
+      height: 3.6rem;
+      line-height: 2.4rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+    }
+  }
+}
