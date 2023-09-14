@@ -1,5 +1,12 @@
 import axios from "axios";
 
+// next.config.js
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//     experimental: false
+// }
+// module.exports = nextConfig
+
 export const LoadData = async () => {
   const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=c815328fa2cd50077d9658b6e39967fb&sort_by=popularity.desc&page=1`;
   // res returns 20 movies
