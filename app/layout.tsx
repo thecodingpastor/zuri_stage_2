@@ -1,14 +1,8 @@
-"use client";
-
 import Navbar from "@/components/Navbar";
 import "./App.scss";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
-import { Poppins } from "next/font/google";
 import { poppins } from "@/fonts";
-
-// import { Inter, Quicksand } from "next/font/google";
-// const inter = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MovieBox",
